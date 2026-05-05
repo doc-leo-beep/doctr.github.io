@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Sumair Mustafa — BDS Student, Oral Surgery Enthusiast, Dental Researcher at LUMHS." />
+  <title>Sumair Mustafa | BDS Student & Dental Researcher</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ── LOADER ── -->
+  <div id="loader" aria-hidden="true">
+    <div class="loader-ring"></div>
+  </div>
+
+  <!-- ── CURSOR ── -->
+  <div id="cursor" aria-hidden="true"></div>
+  <div id="cursor-trail" aria-hidden="true"></div>
+
+  <!-- ── NAVIGATION ── -->
+  <header id="header">
+    <nav class="nav container" role="navigation" aria-label="Main navigation">
+      <a href="#hero" class="nav-logo" aria-label="Sumair Mustafa — Home">
+        <span class="logo-initials">SM</span>
+        <span class="logo-text">Sumair Mustafa</span>
+      </a>
+      <ul class="nav-links" role="list">
+        <li><a href="#about"   class="nav-link">About</a></li>
+        <li><a href="#skills"  class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Research</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=rajputsumair32%40gmail.com&su=Hello%20Sumair%20Mustafa" target="_blank" rel="noopener noreferrer" class="btn btn-sm nav-cta" aria-label="Hire me">Hire Me</a>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <!-- ── MOBILE MENU ── -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <ul role="list">
+      <li><a href="#about"    class="mobile-link">About</a></li>
+      <li><a href="#skills"   class="mobile-link">Skills</a></li>
+      <li><a href="#projects" class="mobile-link">Research</a></li>
+      <li><a href="#contact"  class="mobile-link">Contact</a></li>
+    </ul>
+    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=rajputsumair32%40gmail.com&su=Hello%20Sumair%20Mustafa" target="_blank" rel="noopener noreferrer" class="btn mobile-btn">Get in Touch</a>
+  </div>
+
+  <main>
+
+    <!-- ══════════════════════════════
+         HERO
+    ══════════════════════════════ -->
+    <section id="hero" class="hero">
+      <canvas id="particles-canvas" aria-hidden="true"></canvas>
+      <div class="container hero-inner">
+        <div class="hero-content reveal">
+          <div class="hero-badge">
+            <span class="badge-dot"></span>
+            Available for Internships &amp; Collaborations
+          </div>
+          <h1 class="hero-heading">
+            <span class="hero-hi">Hello, I'm</span>
+            <span class="hero-name">Sumair Mustafa</span>
+            <span class="hero-roles">
+              <span class="role-wrap">
+                <span class="role" id="typed-role"></span>
+                <span class="typed-cursor">|</span>
+              </span>
+            </span>
+          </h1>
+          <p class="hero-sub">
+            Third-year BDS student at LUMHS with <strong>40+ clinical cases</strong>, two ongoing research studies,
+            and a passion for evidence-based, patient-centred dental practice.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <a href="#contact"  class="btn btn-ghost">Let's Talk</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat">
+              <span class="stat-num" data-target="40">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Clinical Cases</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+              <span class="stat-num" data-target="10">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Nerve Block Types</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+              <span class="stat-num" data-target="2">0</span>
+              <span class="stat-label">Research Studies</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+              <span class="stat-num" data-target="5">0</span><span class="stat-plus">+</span>
+              <span class="stat-label">Leadership Roles</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual reveal-right">
+          <div class="profile-frame">
+            <div class="profile-circle">
+              <span class="profile-initials">SM</span>
+            </div>
+            <div class="profile-ring ring-1"></div>
+            <div class="profile-ring ring-2"></div>
+            <div class="floating-card card-1">
+              <span class="fc-icon">🦷</span>
+              <div>
+                <strong>Oral Surgery</strong>
+                <small>40+ Extractions</small>
+              </div>
+            </div>
+            <div class="floating-card card-2">
+              <span class="fc-icon">🔬</span>
+              <div>
+                <strong>Research</strong>
+                <small>2 Active Studies</small>
+              </div>
+            </div>
+            <div class="floating-card card-3">
+              <span class="fc-icon">🎓</span>
+              <div>
+                <strong>LUMHS</strong>
+                <small>BDS · 3rd Year</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#about" class="scroll-hint" aria-label="Scroll down">
+        <span class="scroll-dot"></span>
+      </a>
+    </section>
+
+    <!-- ══════════════════════════════
+         ABOUT
+    ══════════════════════════════ -->
+    <section id="about" class="about section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Who I Am</span>
+          <h2 class="section-title">About Me</h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-text reveal">
+            <p>
+              I'm a third-year <strong>Bachelor of Dental Surgery (BDS)</strong> student at Liaquat University
+              of Medical &amp; Health Sciences (LUMHS), Jamshoro, with a deep commitment to Oral Surgery,
+              Oral Medicine, and evidence-based clinical practice.
+            </p>
+            <p>
+              My clinical training spans <strong>40+ supervised tooth extractions</strong>, proficiency in
+              ten distinct nerve block techniques (IANB, PSA, MSA, ASA, long buccal, lingual, greater palatine,
+              nasopalatine, mental, and infraorbital), composite restorations, and radiographic interpretation —
+              built across internships at Bhitai Dental &amp; Medical College and Advance Dental Care Centre.
+            </p>
+            <p>
+              Outside the clinic, I co-investigate two ongoing cross-sectional research studies in paediatric
+              oral health and dental anxiety, and I lead peer-learning initiatives that have supported
+              <strong>200+ BDS students</strong> through the Study Aid Project at LUMHS.
+            </p>
+            <blockquote class="about-quote">
+              "My goal is to combine strong clinical technique with meaningful research to improve dental care
+              access and outcomes in underserved communities across Pakistan."
+            </blockquote>
+          </div>
+          <div class="about-info reveal-right">
+            <div class="info-card">
+              <ul class="info-list">
+                <li>
+                  <span class="info-icon">🎓</span>
+                  <div><small>University</small><strong>LUMHS, Jamshoro</strong></div>
+                </li>
+                <li>
+                  <span class="info-icon">📅</span>
+                  <div><small>Expected Graduation</small><strong>March 2028</strong></div>
+                </li>
+                <li>
+                  <span class="info-icon">🦷</span>
+                  <div><small>Clinical Interest</small><strong>Oral Surgery &amp; Oral Medicine</strong></div>
+                </li>
+                <li>
+                  <span class="info-icon">🔬</span>
+                  <div><small>Research Focus</small><strong>Paediatric Oral Health · Dental Anxiety</strong></div>
+                </li>
+                <li>
+                  <span class="info-icon">📍</span>
+                  <div><small>Location</small><strong>Hyderabad, Sindh, Pakistan</strong></div>
+                </li>
+                <li>
+                  <span class="info-icon">✉️</span>
+                  <div><small>Email</small><strong>rajputsumair32@gmail.com</strong></div>
+                </li>
+              </ul>
+            </div>
+            <div class="experience-cards">
+              <div class="exp-card reveal">
+                <div class="exp-top">
+                  <div>
+                    <strong>Surgical Intern</strong>
+                    <span>Bhitai Dental &amp; Medical College</span>
+                  </div>
+                  <time>Jan 2026</time>
+                </div>
+                <p>Assisted in oral surgical procedures; reinforced asepsis and post-operative care protocols.</p>
+              </div>
+              <div class="exp-card reveal">
+                <div class="exp-top">
+                  <div>
+                    <strong>Operative Intern</strong>
+                    <span>Advance Dental Care Centre</span>
+                  </div>
+                  <time>Jun 2025</time>
+                </div>
+                <p>Developed patient-centred consultation skills and improved radiographic interpretation (OPG, bitewing, periapical).</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════
+         SKILLS
+    ══════════════════════════════ -->
+    <section id="skills" class="skills section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Competencies</span>
+          <h2 class="section-title">Skills &amp; Expertise</h2>
+        </div>
+        <div class="skills-grid">
+
+          <div class="skill-card reveal">
+            <div class="skill-icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3>Oral Surgery</h3>
+            <ul>
+              <li>40+ extractions (simple–moderate)</li>
+              <li>Local anaesthesia administration</li>
+              <li>IANB · PSA · MSA · ASA blocks</li>
+              <li>Long buccal · lingual · greater palatine</li>
+              <li>Mental · infraorbital · nasopalatine</li>
+            </ul>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+            </div>
+            <h3>Restorative</h3>
+            <ul>
+              <li>Class I–V composite restorations</li>
+              <li>Cavity preparation &amp; isolation</li>
+              <li>OPG, bitewing, periapical X-ray reading</li>
+              <li>Systematic history-taking</li>
+              <li>Structured case documentation</li>
+            </ul>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"/></svg>
+            </div>
+            <h3>Research</h3>
+            <ul>
+              <li>Cross-sectional study design</li>
+              <li>Questionnaire design &amp; admin</li>
+              <li>Data collection &amp; statistical analysis</li>
+              <li>Literature review</li>
+              <li>Evidence-based dentistry</li>
+            </ul>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+            </div>
+            <h3>Leadership</h3>
+            <ul>
+              <li>Team management &amp; coordination</li>
+              <li>Community outreach campaigns</li>
+              <li>Peer mentorship &amp; education</li>
+              <li>Student representation</li>
+              <li>Event project management</li>
+            </ul>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <h3>Cross-Infection Control</h3>
+            <ul>
+              <li>Sterilisation protocols</li>
+              <li>Infection control compliance</li>
+              <li>Patient safety standards</li>
+              <li>Dental ethics &amp; patient rights</li>
+            </ul>
+          </div>
+
+          <div class="skill-card reveal">
+            <div class="skill-icon-wrap">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <h3>Technical</h3>
+            <ul>
+              <li>Microsoft Office Suite</li>
+              <li>Google Workspace</li>
+              <li>Academic presentations</li>
+              <li>LinkedIn &amp; professional networking</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <!-- Certifications Strip -->
+        <div class="certs-section reveal">
+          <h3 class="certs-heading">Certifications &amp; CME</h3>
+          <div class="certs-track-wrap">
+            <div class="certs-track" id="certs-track">
+              <span class="cert-pill">Fundamentals of Research — AKU</span>
+              <span class="cert-pill">Dental Emergencies Virtual Summit — PRIDE</span>
+              <span class="cert-pill">Antibiotic Stewardship in Dental Settings</span>
+              <span class="cert-pill">Role of Caries Assessment — Colgate</span>
+              <span class="cert-pill">Class II Correction — Removable &amp; Fixed Appliances</span>
+              <span class="cert-pill">Key Factors of Great Posterior Restoration</span>
+              <span class="cert-pill">Head &amp; Neck Cancer Awareness Presentation</span>
+              <span class="cert-pill">PRIDE Oral Health Awareness Campaign</span>
+              <!-- duplicate for seamless loop -->
+              <span class="cert-pill">Fundamentals of Research — AKU</span>
+              <span class="cert-pill">Dental Emergencies Virtual Summit — PRIDE</span>
+              <span class="cert-pill">Antibiotic Stewardship in Dental Settings</span>
+              <span class="cert-pill">Role of Caries Assessment — Colgate</span>
+              <span class="cert-pill">Class II Correction — Removable &amp; Fixed Appliances</span>
+              <span class="cert-pill">Key Factors of Great Posterior Restoration</span>
+              <span class="cert-pill">Head &amp; Neck Cancer Awareness Presentation</span>
+              <span class="cert-pill">PRIDE Oral Health Awareness Campaign</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════
+         PROJECTS / RESEARCH
+    ══════════════════════════════ -->
+    <section id="projects" class="projects section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Academic Work</span>
+          <h2 class="section-title">Research &amp; Projects</h2>
+        </div>
+        <div class="projects-grid">
+
+          <article class="project-card reveal">
+            <div class="project-num">01</div>
+            <div class="project-badge">Co-Investigator · 2026 – Present</div>
+            <h3>Prevalence of Dental Caries and Its Association with Oral Hygiene Habits</h3>
+            <p>Cross-sectional observational study examining caries prevalence and its correlation with oral hygiene practices in school-going children. Findings aimed at informing targeted school-based oral health promotion programmes.</p>
+            <div class="project-tags">
+              <span>Paediatric Dentistry</span>
+              <span>Cross-Sectional</span>
+              <span>Statistical Analysis</span>
+            </div>
+            <div class="project-footer">
+              <span class="status-dot"></span> Active Study
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-num">02</div>
+            <div class="project-badge">Co-Investigator · 2026 – Present</div>
+            <h3>Prevalence &amp; Associated Factors of Dental Anxiety Toward Tooth Extraction</h3>
+            <p>Cross-sectional study investigating the prevalence and determinants of dental anxiety in adult outpatients at a government hospital in Hyderabad. Utilises validated anxiety assessment instruments in low-resource public dental settings.</p>
+            <div class="project-tags">
+              <span>Dental Anxiety</span>
+              <span>Pain Management</span>
+              <span>Public Dentistry</span>
+            </div>
+            <div class="project-footer">
+              <span class="status-dot"></span> Active Study
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-num">03</div>
+            <div class="project-badge">Lead Coordinator · Sep 2024 – Present</div>
+            <h3>Study Aid Project — BDS Peer Learning Initiative</h3>
+            <p>Spearheaded peer-learning resources and academic support for 200+ BDS students over 2+ years at LUMHS. Developed structured study guides and MCQ banks across Oral Surgery, Oral Medicine, and preclinical subjects.</p>
+            <div class="project-tags">
+              <span>Peer Education</span>
+              <span>Curriculum Resources</span>
+              <span>200+ Students</span>
+            </div>
+            <div class="project-footer">
+              <span class="status-dot"></span> Ongoing
+            </div>
+          </article>
+
+          <article class="project-card reveal">
+            <div class="project-num">04</div>
+            <div class="project-badge">Volunteer Contributor · March 2026</div>
+            <h3>PRIDE Oral Health Awareness Virtual Campaign</h3>
+            <p>Contributed to a one-month national virtual oral health awareness campaign, creating educational content for the public on dental hygiene, caries prevention, and the importance of regular dental visits.</p>
+            <div class="project-tags">
+              <span>Community Outreach</span>
+              <span>Health Advocacy</span>
+              <span>Public Education</span>
+            </div>
+            <div class="project-footer">
+              <span class="status-dot status-done"></span> Completed
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════
+         CONTACT
+    ══════════════════════════════ -->
+    <section id="contact" class="contact section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label">Let's Connect</span>
+          <h2 class="section-title">Get in Touch</h2>
+        </div>
+        <div class="contact-grid">
+
+          <div class="contact-left reveal">
+            <p class="contact-intro">
+              I'm actively looking for clinical internships, research collaborations, and dental student
+              network opportunities. Whether you're an educator, researcher, or fellow student — I'd love to hear from you.
+            </p>
+            <ul class="contact-list">
+              <li>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=rajputsumair32%40gmail.com&su=Hello%20Sumair%20Mustafa" target="_blank" rel="noopener noreferrer" class="contact-item">
+                  <span class="c-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                  </span>
+                  <div>
+                    <small>Email</small>
+                    <strong>rajputsumair32@gmail.com</strong>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="tel:+923323804917" class="contact-item">
+                  <span class="c-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.6 19.79 19.79 0 0 1 1.61 5 2 2 0 0 1 3.57 2.8h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10.4a16 16 0 0 0 6 6l.92-.92a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.5 18z"/></svg>
+                  </span>
+                  <div>
+                    <small>Phone</small>
+                    <strong>+92-332-3804917</strong>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/in/sumair-mustafa" target="_blank" rel="noopener noreferrer" class="contact-item">
+                  <span class="c-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                  </span>
+                  <div>
+                    <small>LinkedIn</small>
+                    <strong>linkedin.com/in/sumair-mustafa</strong>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <span class="contact-item static">
+                  <span class="c-icon">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  </span>
+                  <div>
+                    <small>Location</small>
+                    <strong>Hyderabad, Sindh, Pakistan</strong>
+                  </div>
+                </span>
+              </li>
+            </ul>
+          </div>
+
+          <form class="contact-form reveal-right" id="contact-form" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Dr. Ahmed Khan" required autocomplete="name" />
+                <span class="form-error" id="name-error"></span>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email" />
+                <span class="form-error" id="email-error"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Research Collaboration / Internship Offer" required />
+              <span class="form-error" id="subject-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="I'd like to discuss..." required></textarea>
+              <span class="form-error" id="message-error"></span>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
+              <span id="btn-text">Send Message</span>
+              <svg id="btn-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+            <p class="form-note" id="form-note"></p>
+          </form>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-initials sm">SM</span>
+        <div>
+          <strong>Sumair Mustafa</strong>
+          <small>BDS Student · LUMHS, Jamshoro</small>
+        </div>
+      </div>
+      <p class="footer-copy">&copy; <span id="year"></span> Sumair Mustafa. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Research</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
